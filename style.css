@@ -1,0 +1,765 @@
+* {
+  box-sizing: border-box;
+  
+
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #F9F6FF;
+
+
+}
+
+#webpage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+}
+
+
+.heading-section {
+  background-color: #2E4CFF;
+  padding: 58px 100px 170px 69px;
+
+}
+
+
+
+.web-header {
+
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.nav-bar .nav-item {
+  padding: 10px 25px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-item {}
+
+.landing-container {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.landing-photo {
+  padding: 60px 0 60px 60px;
+  width: 456px;
+  height: 556px;
+}
+
+.landing-title {
+  margin-top: 80px;
+}
+
+
+.actons-container {
+  display: flex;
+
+}
+
+.button {
+  margin: 15px;
+  border-radius: 12px;
+
+
+}
+
+.button1 {
+  border: none;
+  color: #2e4cff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.button2 {
+  color: #f7f7f7;
+  border-color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+
+.nav-button {
+
+  background-color: white;
+  border: none;
+  color: #2e4cff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+
+
+.container-ofcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 25px;
+}
+
+.classes-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 100px 50px 100px;
+}
+
+.yogaclass {
+  width: 75%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.classes-card-container {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 20px;
+  align-items: start;
+  /* justify-content: center; */
+  width: fit-content;
+}
+
+.classes-card-container2 {
+  margin-top: 100px;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 20px;
+  align-items: start;
+  /* justify-content: center; */
+  width: fit-content;
+}
+
+.class-title {
+  text-align: start;
+  font-size: 40px;
+  margin: 0 0 100px 0;
+}
+
+.card,
+.card2 {
+  font-size: 22px;
+  padding: 82px 35px;
+  text-align: center;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.card {
+  color: white;
+  background: #2e4cff;
+}
+
+.card2 {
+  background: white;
+  color: #2e4cff;
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+/*Gallery start*/
+
+.gallery-title {
+
+  text-align: center;
+  font-size: 40px;
+  margin-block: 100px;
+
+}
+
+
+.Gallery-container {
+  width: 100%;
+  padding: 2rem 100px;
+}
+
+.gallery {
+  display: grid;
+  /*grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);*/
+  grid-template-areas:
+    'itemCard1 itemCard2 itemCard3'
+    'itemCard1 itemCard4 itemCard5';
+  gap: 20px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.gallery__item--1 {
+  margin: 0;
+  grid-area: itemCard1;
+}
+
+.gallery__item--2 {
+  margin: 0;
+  grid-area: itemCard2;
+}
+
+.gallery__item--3 {
+  margin: 0;
+  grid-area: itemCard3;
+}
+
+.gallery__item--4 {
+  margin: 0;
+  grid-area: itemCard4;
+}
+
+.gallery__item--5 {
+  margin: 0;
+  grid-area: itemCard5;
+}
+
+
+
+/*Team page start*/
+.TeamPage {
+  padding: 90px 60px;
+}
+
+.Team-Title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 120px;
+}
+
+
+.Team-Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Team-Card {
+  padding: 40px;
+  background: white;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+.team-text {
+  color: #c4c4c4;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.subtext {
+  font-size: 20px;
+}
+
+.team-join {
+  font-size: 14px;
+}
+
+
+
+
+.pricing-text {
+  text-align: center;
+  font-size: 50px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px;
+  flex-wrap: wrap;
+
+}
+
+
+.button3 {
+  border: none;
+  color: white;
+  background-color: #2E4CFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.month-cont {
+  padding: 40px;
+  background: white;
+  text-align: center;
+  color: black;
+  width: 310px;
+  border-radius: 12px;
+}
+
+.month-cont2 {
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+  border-width: 0.2px;
+  border-radius: 12px 12px 12px 12px;
+  width: 310px;
+  background: #fff;
+  padding-top: 40px;
+}
+
+.card2headtext {
+  text-align: center;
+  color: white;
+  padding: 15px;
+  position: absolute;
+  height: 60px;
+  top: -70px;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  background-color: #2e4cff;
+}
+
+.month-text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+.pricing-number .number {
+  font-size: 60px;
+  margin: 0;
+}
+
+.n-text {
+  margin-top: 0;
+  opacity: .8;
+}
+
+.blog-text {
+  padding: 60px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.blog-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 25px;
+}
+
+.blogimg1 {
+  position: relative;
+  display: inline-block;
+}
+
+.blogimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.blogimgtext {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  z-index: 1;
+}
+
+
+
+.text1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.text2 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+
+.questioncard {
+  padding: 50px;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+
+}
+
+.question-box {
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+  background: #fff;
+  padding: 35px 50px;
+  border-radius: 12px;
+
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 5px;
+}
+
+.question .button {
+  margin: 0;
+}
+
+.thequestion {
+  margin: 0;
+  font-size: 30px;
+}
+
+.thequestionp {
+  color: #c4c4c4;
+  margin: 0;
+}
+
+
+.footer-section {
+  background-color: #2E4CFF;
+  padding: 90px 0 20px 0;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.explore {
+  text-align: center;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-column {
+  flex: 1 1 300px;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 80px;
+}
+
+.footer-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 40px 0;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 5px;
+  color: #2E4CFF;
+  text-decoration: none;
+}
+
+.icon i {
+  font-size: 20px;
+}
+
+.copy {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.media-text {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+
+.nav-bar--control {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .nav-bar--container {
+    position: relative;
+  }
+
+  .nav-bar--container:hover .nav-bar,
+  .nav-bar--container:focus .nav-bar {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+
+  .nav-bar--control {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .nav-bar {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    flex-direction: column;
+    background: #404ffd;
+    height: max-content;
+    right: 0;
+    padding: 10px 20px;
+    box-shadow: 0px 25px 25px 0px rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    transition: .2s ease;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .heading-section {
+    padding: 10px;
+  }
+
+  .Landing-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .landing-photo {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .landing-title {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .actons-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .classes-img {
+    display: none
+  }
+
+  .classes-container {
+    justify-content: center;
+    margin: 80px 0px 50px 0px
+  }
+
+  .class-title {
+    text-align: center;
+    /**don't mess */
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .class-title {
+    font-size: 30px;
+  }
+
+  .classes-card-container2 {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .Gallery-container {
+    padding-inline: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Gallery-title {
+    font-size: 30px;
+    margin-block: 40px;
+  }
+
+  .gallery {
+    grid-template-areas:
+      'itemCard1 itemCard2 '
+      'itemCard1 itemCard4 '
+      'itemCard3 itemCard5';
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .gallery {
+    grid-template-areas: 'itemCard1' 'itemCard2' 'itemCard3' 'itemCard4' 'itemCard5';
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .Team-Title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .pricing-container {
+    padding: 20px;
+  }
+
+  .pricing-text {
+    font-size: 30px;
+  }
+
+  .TeamPage {
+    padding: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .month-cont2 {
+    margin-top: 55px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .blog-text {
+    font-size: 30px;
+    padding: 0 25px;
+  }
+
+  .text1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .questioncard {
+    padding: 0 20px 40px 20px;
+  }
+
+  .thequestion {
+    font-size: 22px;
+  }
+
+  .thequestionp {
+    font-size: 15px;
+  }
+
+  .question-box {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .button3 {
+    padding-inline: 20px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+
+  .footer-container {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+}
+
+
